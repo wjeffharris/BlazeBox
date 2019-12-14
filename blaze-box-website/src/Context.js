@@ -12,15 +12,35 @@ var productContext= React.createContext();
 class Provider extends Component {
     state ={ 
         //setting the state for the product store and product details.
-        products: storeProducts,
+        products: [],
         detailProduct: detailProduct
     }
+    componentDidMount(){
+        this.setProducts();
+    }
     //methods:
+    setProducts=()=>{
+        let tempProducts = [];
+        storeProducts.forEach(item =>{
+            const singleItem ={...item};
+            tempProducts = [...tempProducts, singleItem];
+        })
+        this.setState(()=>{
+            return {products:tempProducts}
+        })
+    }
+    
     Details=()=>{
         console.log("This is the Detail Function")
     }
     addToCart = () =>{
         console.log("This is the addToCart Function")
+    }
+    tester =()=>{
+        console.log("State Product: ", this.state.products[0].inCart)
+        console.log("Data Product: ", storeProducts[0].inCart)
+
+        
     }
     render() {
         return (
