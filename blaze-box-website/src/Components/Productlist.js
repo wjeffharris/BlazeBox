@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Product from './Product';
 import Title from './Title'
-// import {storeProducts} from '../data'
+//import {storeProducts} from '../data'
 import {Consumer} from '../Context'
+
 export default class Productlist extends Component{
     // state = {
     //     products: storeProducts
@@ -14,7 +15,7 @@ export default class Productlist extends Component{
               {/* <Product/>*/}
             <div className="py-5">{/* bootstrap for using padding from top to bottom */}
                 <div className="container">
-                    <Title name="Bl🔥ze" title="boxes"/>{/* displaying the title if the page*/}
+                    <Title name="Bl🔥zE" title="boxes"/>{/* displaying the title if the page*/}
                     <div className="row">
                     <Consumer>
                         {/* This is going to display all of the products from the Context.js file */}

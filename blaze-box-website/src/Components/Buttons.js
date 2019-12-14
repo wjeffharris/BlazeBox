@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 // created this button for shopping cart that will be reused throughout the website.
 export const ButtonContainer = styled.button`
 text-transform: capitalize;
 font-size: 1rem;
 background: transparent;
-border-color: white;
+border-color: black;
 color: noir;
 border-radius: 0.5rem;
 padding: 0.2rem 0.5rem;
