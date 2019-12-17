@@ -5,7 +5,7 @@ export const ButtonContainer = styled.button`
 text-transform: capitalize;
 font-size: 1rem;
 background: transparent;
-border-color: black;
+border-color: ${props => props.cart?"orange": "lightblue"};
 color: noir;
 border-radius: 0.5rem;
 padding: 0.2rem 0.5rem;

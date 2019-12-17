@@ -7,6 +7,7 @@ import Details from './Components/Details';
 import Cart from './Components/Cart';
 import Default from './Components/Default';
 import Productlist from './Components/Productlist';
+import Modal from './Components/Modal'
 // This is where all the routes are kept
 class App extends Component {
   render(){
@@ -21,6 +22,7 @@ class App extends Component {
           {/* <Route path='/join' component={Join}/> */}
           <Route component={Default}/>
         </Switch>
+        {/* <Modal/> */}
       </React.Fragment>
       
     );

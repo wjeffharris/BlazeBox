@@ -2,44 +2,43 @@ export const storeProducts=[
     {
         //properties in the object array:
         id:1,
-        title: "box1",
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT95Je4jU8TsXyfdnYqZM7pMmyfTp7xhEItmkvc3EpJ1lAHxjUN&s' ,
-        price:100,
-        info: "do not know yet",
+        title: "Havana",
+        img: 'artwork1.jpeg' ,
+        price:80,
+        info: "Painting of a building in Havana, Cuba",
         inCart:false,
         count:0,
         total:0
     },
     {
         id:2,
-        title: "box2",
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT95Je4jU8TsXyfdnYqZM7pMmyfTp7xhEItmkvc3EpJ1lAHxjUN&s' ,
-        price:10,
-        info: "do not know yet",
+        title: "Blue Man",
+        img:'artwork2.jpeg' ,
+        price:50,
+        info: "this is just a photo of a blue man",
         inCart:false,
         count:0,
         total:0
     },
     {
         id:3,
-        title: "box3",
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT95Je4jU8TsXyfdnYqZM7pMmyfTp7xhEItmkvc3EpJ1lAHxjUN&s' ,
-        price:1000,
-        info: "do not know yet",
+        title: "Breakthrough",
+        img:'artwork3.jpg' ,
+        price:120,
+        info: "",
         inCart:false,
         count:0,
         total:0
     },
 ]
-export const detailProduct=[
+export const detailProduct=
     {
         id:1,
-        title: "box1",
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT95Je4jU8TsXyfdnYqZM7pMmyfTp7xhEItmkvc3EpJ1lAHxjUN&s' ,
-        price:100,
-        info: "do not know yet",
+        title: "Havana",
+        img:'artwork1.jpeg' ,
+        price:80,
+        info: "Painting of a building in Havana, Cuba",
         inCart:false,
         count:0,
         total:0
     }
-]

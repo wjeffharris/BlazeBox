@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PropTypes from 'prop-types';
-import {Consumer} from '../Context'
+import {ProductConsumer} from '../Context'
 // import { is } from '@babel/types';
 
 export default class Product extends Component{
@@ -12,8 +12,11 @@ export default class Product extends Component{
         return(
             <ProductWrapper className = "col-9 mx-auto col-md-6 col-lg-3 my-3">
         <div className="card"> 
+        <ProductConsumer>
+            {(value)=> (
             <div className="img-container p-5" 
-            onClick={()=>console.log("Click, Clack")}>
+            onClick={()=>value.Details(id)
+            }>
              <Link to= "/details">
                  <img src={img} alt="product" className="card-img-top"/>
              </Link>
@@ -21,7 +24,9 @@ export default class Product extends Component{
              {/* <button className="cart-btm" disabled={inCart?true:false}/>  */}
              <button className="cart-btn" 
                 disabled ={inCart ? true:false} 
-                onClick={()=>{console.log('Product added!')
+                onClick={()=>{
+                    value.addToCart(id)
+                    value.openModal(id)   
             }}>
             {inCart?(
                 <p className="text-capitalize mb-0 disabled"> in Cart</p>
@@ -30,6 +35,8 @@ export default class Product extends Component{
             )}
              </button>
             </div>
+            )} 
+            </ProductConsumer>
             {/*card footer */}
             <div className="card-footer d-flex justify-content-between">
                 <p className="align-self-center mb-0">
